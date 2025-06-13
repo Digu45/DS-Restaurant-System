@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Recommendation System</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #eef2f5; /* Light blue-gray background */
+            color: #1f2d3d; /* Deep navy for text */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+    
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            background-color: #0d47a1; /* Navy blue */
+            color: #fff;
+            padding: 20px 40px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        }
+    
+        header h1 {
+            margin: 0;
+            font-size: 26px;
+            letter-spacing: 1px;
+        }
+    
+        header div {
+            display: flex;
+            gap: 15px;
+        }
+    
+        button {
+            background-color: #1976d2; /* Blue */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+    
+        button:hover {
+            background-color: #fff;
+            color: #1976d2;
+            border: 1px solid #1976d2;
+        }
+    
+        .middle-content {
+            margin-top: 40px;
+            width: 90%;
+            max-width: 500px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    
+        input[type="text"] {
+            width: 100%;
+            padding: 12px 15px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 2px solid #1976d2;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            background-color: #f7f9fc;
+        }
+    
+        input[type="text"]:focus {
+            border-color: #0d47a1;
+            outline: none;
+            background-color: #fff;
+        }
+    
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 20px;
+            }
+    
+            .middle-content {
+                width: 95%;
+                padding: 20px;
+            }
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <header>
+        <h1>Restaurant Recommendation System</h1>
+        <div>
+            <button onclick="location.href='/'">Home</button>
+            <button onclick="location.href='/recommend'">Recommend</button>
+        </div>
+    </header>
+    <div class="middle-content">
+        <h2>Restaurant Name</h2>
+        <form action="/result" method="post">
+            <input type="text" id="restaurant" name="restaurant_name">
+            <input type="submit" value="Click to see the recommendation">
+        </form>
+    </div>
+</body>
+</html>

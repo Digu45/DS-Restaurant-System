@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Recommendation System</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #222;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+    
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+    
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+    
+        header div {
+            display: flex;
+            gap: 15px;
+        }
+    
+        button {
+            background-color: #000;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 10px 18px;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+    
+        button:hover {
+            background-color: #fff;
+            color: #000;
+            border: 1px solid #000;
+        }
+    
+        .middle-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+            gap: 30px;
+            flex: 1;
+        }
+    
+        .middle-content .text {
+            flex: 1 1 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    
+        .middle-content .image {
+            flex: 1 1 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .middle-content img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+    
+            .middle-content {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>Restaurant Recommendation System</h1>
+        <div>
+            <button onclick="location.href='/'">Home</button>
+            <button onclick="location.href='/recommend'">Recommend</button>
+        </div>
+    </header>
+    <div class="middle-content">
+        <div class="text">
+            <h2>Build Recommendation System with ease!!</h2>
+            <p>In this age of information overload, people use a variety of strategies to make 
+                choices about what to buy, how to spend their leisure time, and even where to go. 
+                Recommender systems automate some of these strategies with the goal of providing affordable food items.
+                The aim is to create a content-based recommender system in which when we write a restaurant name, the 
+                recommender system will look at the reviews of other restaurants, and the system will recommend us other 
+                restaurants with similar reviews and sort them from the highest-rated.
+            </p>
+            <h2>Test the System</h2>
+            <button onclick="location.href='/recommend'">Recommend</button>
+        </div>
+        <div class="image">
+            <img src="{{ url_for('static', filename='pexels-chanwalrus-958545.jpg') }}" alt="Your Image">
+        </div>
+    </div>
+</body>
+</html>
