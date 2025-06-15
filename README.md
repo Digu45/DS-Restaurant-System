@@ -17,14 +17,14 @@
 
 ### Input Page:
 <p align="center">
- <img src="https://drive.google.com/uc?export=view&id=1IbY--fKfaggy7Fed5yLr5c1fhdXJFzqF
- " width="800" alt="Image 1">
+  <img src="https://drive.google.com/uc?export=view&id=1IbY--fKfaggy7Fed5yLr5c1fhdXJFzqF" width="800" alt="Image">
+
 </p>
 
 ### Recommendation Output:
 <p align="center">
- <img src="https://drive.google.com/uc?export=view&id=1eNTDSUJStBz8wF3UhkRcbq8GTR1NPa2_
- " width="800" alt="Image 3">
+   <img src="https://drive.google.com/uc?export=view&id=1eNTDSUJStBz8wF3UhkRcbq8GTR1NPa2_" width="800" alt="Image">
+
 </p>
 
 ## **Installation and Setup**
