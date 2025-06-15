@@ -12,7 +12,7 @@
 
 ### Home Page:
 <p align="center">
-<img src="https://drive.google.com/file/d/13twy3L_2aFMCC5y1oYNU5_oqZygN9pJP/view?usp=sharing" width="800" alt="Image 2">
+<img src="https://drive.google.com/uc?export=view&id=13twy3L_2aFMCC5y1oYNU5_oqZygN9pJP" width="800" alt="Image">
 </p>
 
 ### Input Page:
