@@ -4,8 +4,7 @@
 ## **Project Description**
 - This project involves the development of a smart restaurant recommendation system designed to offer personalized dining suggestions based on individual user preferences.
 
-- It employs a hybrid recommendation approach, integrating both **collaborative filtering** and **content-based filtering** methods to generate precise and relevant recommendations.
-
+- It employs a hybrid recommendation approach, integrating both **collaborative filtering** and **content-based filtering** methods to generate precise and relevant recommendations .
 - The system dynamically adjusts its suggestions using user inputs and real-time geolocation data, enhancing the overall dining decision experience.
 
 
